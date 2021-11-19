@@ -5,14 +5,14 @@
     font-family: 'Fraunces';
     font-weight: 400;
     src: url('../fonts/Fraunces/fraunces-v10-latin-regular.woff2') format('woff2'),
-    url('../fonts/Fraunces/fraunces-v10-latin-regular.woff') format('woff');
+        url('../fonts/Fraunces/fraunces-v10-latin-regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Fraunces';
     font-weight: 900;
     src: url('../fonts/Fraunces/fraunces-v10-latin-900.woff2') format('woff2'),
-    url('../fonts/Fraunces/fraunces-v10-latin-900.woff') format('woff');
+        url('../fonts/Fraunces/fraunces-v10-latin-900.woff') format('woff');
 }
 
 /* Barlow */
@@ -20,14 +20,14 @@
     font-family: 'Barlow';
     font-weight: 400;
     src: url('../fonts/barlow/barlow-v5-latin-regular.woff2') format('woff2'),
-    url('../fonts/barlow/barlow-v5-latin-regular.woff') format('woff');
+        url('../fonts/barlow/barlow-v5-latin-regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Barlow';
     font-weight: 700;
     src: url('../fonts/barlow/barlow-v5-latin-700.woff2') format('woff2'),
-    url('../fonts/barlow/barlow-v5-latin-700.woff') format('woff');
+        url('../fonts/barlow/barlow-v5-latin-700.woff') format('woff');
 }
 
 
@@ -112,7 +112,6 @@ header .container {
 .hero .container {
     width: 1280px;
     padding: 0;
-    margin-bottom: 220px;
     padding: 117px 85px;
     background-image: url(../images/jpg/hero-picture.jpg);
     background-position: left 0 bottom -250px;
@@ -156,24 +155,62 @@ header .container {
 
 /* PRODUCTS */
 
-.products-heading {
+.products .container {
     position: relative;
+    padding-top: 260px;
+}
+
+.products-heading {
+    position: absolute;
+    top: 220px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: -2;
     margin: 0;
     font-family: 'Fraunces', 'Times new roman', serif;
     font-weight: 900;
     font-size: 150px;
     line-height: 72px;
-    text-align: center;
+    white-space: nowrap;
     color: #83888F;
 }
 
-.products-heading::after{
-    position: absolute;
-    right: 50%;
-    bottom: -40px;
-    transform: translateX(50%);
+.products-heading::after {
     content: "";
+    position: absolute;
+    bottom: -40px;
+    right: 50%;
+    transform: translateX(50%);
     width: 1100px;
     height: 200px;
     background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+}
+
+.product-menu {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.product {
+    width: 255px;
+    text-align: center;
+}
+
+.product img {
+    margin-bottom: 72px;
+}
+
+.product-name {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Fraunces', 'Times new roman', serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.product-text {
+    margin: 0;
 }
