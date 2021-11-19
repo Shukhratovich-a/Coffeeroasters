@@ -181,7 +181,7 @@ header .container {
     bottom: -40px;
     right: 50%;
     transform: translateX(50%);
-    width: 100%;
+    width: 100vw;
     height: 200px;
     background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
 }
